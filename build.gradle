@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.gradleUcapan'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:30.0-android'
+    testImplementation 'junit:junit:4.13.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.register('greetingTask') {
+    doLast {
+        String name = project.hasProperty('name') ?
+                project.property('name') : 'Gradle User'
+        println "Hello, $name! Welcome to Grdale World!"
+    }
+}
