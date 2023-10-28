@@ -33,3 +33,8 @@ git add .
 git commit -m "Initial commit"
 git remote add origin https://github.com/<your_username>/<repository_name>.git
 git push -u origin master
+
+// Gambar Terminal
+![Gradle ucapan](https://github.com/hadulll/belajarGradle/assets/74028489/cb17f1b0-adc9-438d-9b46-bea097406c58)
+
+
